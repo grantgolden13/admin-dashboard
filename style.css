@@ -1,4 +1,22 @@
 * {
     box-sizing: border-box;
-    background-color: green;
+}
+
+html, body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(480px, 3.5fr);
+    
+}
+
+.sidebar {
+    background-color: #0EA5E9;
 }
