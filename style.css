@@ -14,7 +14,7 @@ ul {
 .container {
     display: grid;
     grid-template-columns: minmax(240px, 1fr) minmax(480px, 3.5fr);
-    
+    grid-template-rows: minmax(180px, 1fr) minmax(720px, 4fr);
 }
 
 .sidebar {
