@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -12,7 +14,7 @@ ul {
 }
 
 .container {
-    max-height: 100vh;
+    max-height: 98vh;
     display: grid;
     grid-template-columns: minmax(180px, 1fr) minmax(480px, 4fr);
     grid-template-rows: minmax(180px, 1fr) minmax(720px, 4fr);
@@ -26,11 +28,13 @@ ul {
 }
 
 .sidebar {
-    background-color: #0EA5E9;
+    background-color: #0b96d7;
     grid-area: sidebar;
+    color: white;
 }
 
 .main {
+    background-color: #E2E8F0;
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -43,13 +47,16 @@ ul {
 .projects {
     grid-area: projects;
     display: grid;
-    grid-template-columns: repeat(2, minmax(240px, 1fr));
-    grid-template-rows: 50px repeat(3, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
+    grid-template-rows: 25px 1fr;
     grid-template-areas: 
-        "h2 h2"
-        "projects-cont projects-cont"
-        "projects-cont projects-cont"
-        "projects-cont projects-cont";
+        "h2"
+        "projects-cont";
+}
+
+.projects .card {
+    border: 2px solid goldenrod;
+    border-radius: 12px;
 }
 
 .announcements {
@@ -66,4 +73,18 @@ ul {
 
 .projects-container {
     grid-area: projects-cont;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+.upper-header input{
+    background-color: #E2E8F0;
+    width: 550px;
+    height: 28px;
+    border-radius: 12px;
+    border: none;
+}
+
+.sidebar h1 {
+    display: block;
 }
