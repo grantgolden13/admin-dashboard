@@ -121,7 +121,10 @@ h1 {
     border-left: 8px solid #eeb931;
     border-radius: 12px;
     background-color: white;
-    padding: 24px 18px 24px 18px;
+    padding: 36px 20px 36px 20px;
+    display: grid;
+    grid-template-rows: 20px 1fr 40px;
+    gap: 5px;
 }
 
 .announcements {
@@ -239,4 +242,10 @@ input:focus {
     display: grid;
     grid-template-columns: 95px 1fr;
     align-items: center;
+}
+
+.icons {
+    place-self: end;
+    display: flex;
+    gap: 30px;
 }
