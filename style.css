@@ -38,8 +38,20 @@ h1 {
 
 .upper-header {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     align-items: center;
+}
+
+.upper-header div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.upper-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .bottom-header {
@@ -209,7 +221,6 @@ input:focus {
 .flex:hover {
     text-decoration: underline;
     cursor: pointer;
-
 }
 
 .sidebar ul {
@@ -222,4 +233,10 @@ input:focus {
 
 .flip {
     transform: scaleX(-1);
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 95px 1fr;
+    align-items: center;
 }
